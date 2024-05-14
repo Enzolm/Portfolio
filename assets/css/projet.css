@@ -1,0 +1,172 @@
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #131314;
+    display: flex;
+}
+
+h2{
+    color: #131314;
+}
+
+hr{
+    margin-top: 12.5px;
+    border: 1px solid #131314;
+    width: 1000%;
+    height: 0px;
+}
+
+button{
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.sidebar{
+    display: flex;
+    align-content: flex-start;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    height: 100dvh;
+    width: 90px;
+    z-index: 1;
+    position: fixed;
+    border-radius: 0px 15px 15px 0;
+    transition: 0.3s;
+    padding: 12.5px;
+    box-sizing: border-box;
+}
+
+.sidebar:hover {
+    width: 262.5px;
+}
+
+
+@media screen and (max-width: 850px){
+    .sidebar{
+    height: 65px;
+    width: 65px;
+    border-radius: 19.5px;
+    background: #131314;
+    margin-left: 12.5px;
+    margin-top: 12.5px;
+    padding: 0px;
+    }
+
+    .sidebar:hover{
+        height: 100vh;
+        width: 262.5px;
+        border-radius: 15px;
+        background: #f8f9fa;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 12.5px;
+        }
+     
+
+}
+
+.sidebar img{
+    height: 65px;
+    border-radius: 30%;
+}
+
+.logo-text{
+    display: flex;
+    height: 65px;
+}
+
+.logo-text h1{
+    padding-left: 12.6px;
+    color: #131314;
+    width: 250px;
+}
+.vitriceTusoul{
+    display: flex;
+    width: 250px;
+    align-items: center;
+}
+
+.vitriceTusoul h2{
+    padding-left: 25.9px;
+}
+.home{
+    width: 100%;
+}
+
+.home p{
+    margin: 0%;
+}
+
+
+.quisuije h2{
+    font-size: 70px;
+    text-align: end;
+    margin: 0%;
+    background: -webkit-linear-gradient(330deg, #2f6bec,#be1ab6, #8138ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projet{
+    display:flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.projetcommun{
+    flex-grow: 1;
+    padding: 2rem;
+    padding-left: 120px;
+}
+
+.carrousel{
+    display: flex;
+    overflow-x: auto;
+    width: 99%;
+    height: 89%;
+    justify-content: start;
+    gap: 2rem;
+
+}
+
+.carrousel::-webkit-scrollbar{
+    background-color: #000;
+}
+
+.carrousel::-webkit-scrollbar-thumb{
+    background-color: #444746;
+    border-radius: 10px;
+}
+
+.dossier{
+    height: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    background-color: #444746;
+    border-radius: 8px;
+}
+
+.h2Projet {
+    color: aliceblue;
+}
+
+.hrProjet {
+    border: solid 1px aliceblue;
+    width: 100%;
+}

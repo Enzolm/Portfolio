@@ -1,0 +1,215 @@
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #131314;
+    display: flex;
+}
+
+h2{
+    color: #131314;
+}
+
+hr{
+    margin-top: 12.5px;
+    border: 1px solid #131314;
+    width: 100%;
+    height: 0px;
+}
+.nav{
+    z-index: 2;
+}
+
+button{
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.sidebar{
+    display: flex;
+    align-content: flex-start;
+    overflow: hidden;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+    height: 100vh;
+    width: 90px;
+    z-index: 1;
+    position: fixed;
+    border-radius: 0px 15px 15px 0;
+    transition: 0.3s;
+    padding: 12.5px;
+    box-sizing: border-box;
+}
+
+.sidebar:hover {
+    width: 262.5px;
+}
+
+
+@media screen and (max-width: 850px){
+    .sidebar{
+    height: 65px;
+    width: 65px;
+    border-radius: 19.5px;
+    background: #131314;
+    margin-left: 12.5px;
+    margin-top: 12.5px;
+    padding: 0px;
+    }
+
+    .sidebar:hover{
+        height: 100vh;
+        width: 262.5px;
+        border-radius: 15px;
+        background: #f8f9fa;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 12.5px;
+        }
+     
+        .bitmoji {
+            margin-left: 0vw;
+            margin-right: 0vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .bitmoji img{
+            height: 670px;
+        }
+
+}
+
+.sidebar img{
+    height: 65px;
+    border-radius: 30%;
+}
+
+.logo-text{
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.logo-text h1{
+    padding-left: 12.6px;
+    color: #131314;
+    width: 250px;
+}
+
+.divhome{
+    display: flex;
+    width: 250px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.divcv{
+    display: flex;
+    width: 250px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.divparcours{
+    display: flex;
+    width: 250px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.divprojets{
+    display: flex;
+    width: 250px;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.divhome h2{
+    padding-left: 25.9px;
+}
+
+.divcv h2{
+    padding-left: 25.9px;
+}
+
+.divparcours h2{
+    padding-left: 25.9px;
+}
+
+.divprojets h2{
+    padding-left: 25.9px;
+}
+
+
+.home{
+    margin-left: 90px;
+}
+
+.home p{
+    margin: 0%;
+}
+
+.quisuije {
+    display: flex;
+    padding-right: 20px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.quisuije h2{
+    font-size: 70px;
+    text-align: end;
+    margin: 0%;
+    background: -webkit-linear-gradient(330deg, #2f6bec,#be1ab6, #8138ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quisuije h4{
+    margin: 0%;
+    color: #444746;
+}
+
+.contact{
+    margin-top: 10px;
+    border: solid 1px #333537;
+    background: #333537;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.bitmoji {
+    margin-left: 25vw;
+    margin-right: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bitmoji img{
+    height: 670px;
+}
+
+.cvpage{
+    padding-left: 120px;
+}
+
+.cvpage h1{
+}

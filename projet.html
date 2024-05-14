@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/projet.css">
+    <title>Projet • Enzo Lemaire</title>
+
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-text">
+            <img src="assets/img/68_generated.jpg" alt="">
+            <h1>Enzo Lemaire</h1>
+        </div>
+        <hr>
+        <div id="navicon">
+            <button class="divhome vitriceTusoul" onclick="indexPage()">
+                <img src="assets/img/icon/house-door.svg" width="45px" color=#1A1A1A alt="">
+                <h2>Accueil</h2>
+            </button>
+            <button class="divcv vitriceTusoul" onclick="CVPage()">
+                <img src="assets/img/icon/file-earmark-person.svg" width="45px" alt="">
+                <h2>Mon CV</h2>
+            </button>
+            <button class="divparcours vitriceTusoul">
+                <img src="assets/img/icon/briefcase.svg" width="45px" alt="">
+                <h2>Mon Parcours</h2>
+            </button>
+            <button class="divprojets vitriceTusoul" onclick="projetPage()">
+                <img src="assets/img/icon/folder.svg" width="45px" alt="">
+                <h2>Projets</h2>
+        </div>
+        <script>
+            function indexPage() {
+              window.location.href = "/index.html";
+            }
+            function projetPage() {
+              window.location.href = "/projet.html";
+            }
+            function CVPage() {
+              window.location.href = "/cv.html";
+            }
+          </script>
+    </nav>
+    <section class="home">
+        <section class="projet">
+                <Section class="projetcours projetcommun" >
+                    <h2 class="h2Projet">Projet en Formation</h2>
+                    <hr class="hrProjet">
+                    <div class="carrousel">
+                        <div class="dossier" onclick="projet(`crud.html`)">
+                            <h2>Création d'un CRUD</h2>
+                            <p>Création d'un CRUD en React + API et base de donnée</p>
+                            <p>CRUD : Create Read Update Delete</p>
+                        </div>
+
+
+                    </div>
+                </Section>
+                <Section class="projetsncf projetcommun">
+                    <h2 class="h2Projet">Projet en Entreprise</h2>
+                    <hr class="hrProjet">
+                    <div class="carrousel">
+                        <div class="dossier" onclick="projet(`Ramedifferee.html`)">
+                            <h2>Rame Différée</h2>
+                            <p>Création d'une application Power Apps avec pour objectif principal de digitaliser un processus.</p>
+                            <p>L'objectif est de créer un outil permettant la gestion des Rames Différées tout en gardant le même cheminement avec les mêmes personnes, avec des accès bien différents, mais de tout réunir pour faciliter le travail, mais surtout la réactivité.</p>
+                        </div>
+
+
+                    </div>
+                </Section>
+            </section>
+        </section>
+    </body>
+    <script src="assets/script/nav.js"></script>
+</html>

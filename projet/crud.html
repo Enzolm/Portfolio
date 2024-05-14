@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/crud.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-text">
+            <img src="../../assets/img/68_generated.jpg" alt="">
+            <h1>Enzo Lemaire</h1>
+        </div>
+        <hr>
+        <div id="navicon">
+            <button class="divhome" onclick="indexPage()"">
+                <img src="../../assets/img/icon/house-door.svg" width="45px" color=#1A1A1A alt="">
+                <h2>Accueil</h2>
+            </button>
+            <button class="divcv" onclick="projetPage()">
+                <img src="../../assets/img/icon/file-earmark-person.svg" width="45px" alt="">
+                <h2>Mon CV</h2>
+            </button>
+            <button class="divparcours">
+                <img src="../../assets/img/icon/briefcase.svg" width="45px" alt="">
+                <h2>Mon Parcours</h2>
+            </button>
+            <button class="divprojets" href="projet.html"onclick="projetPage()">
+                <img src="../../assets/img/icon/folder.svg" width="45px" alt="">
+                <h2>Projets</h2>
+        </div>
+        <script>
+            function indexPage() {
+              window.location.href = "/index.html";
+            }
+            function projetPage() {
+              window.location.href = "/projet.html";
+            }
+          </script>
+    </nav>
+    <section class="crudpage">
+        <h1 class="crudtittle">Création d'un CRUD</h1>
+        <div class="crud-container">
+            <div class="crud-description">
+                <p>Création d'un CRUD en React + API et base de donnée</p>
+                <hr>
+                <p>Un CRUD, abréviation de "Create, Read, Update, Delete", est un ensemble d'opérations de base essentielles dans le développement de logiciels et de systèmes informatiques. <br>
+                     Ces opérations permettent de gérer efficacement les données au sein d'une application. "Create" correspond à la création de nouvelles entrées de données, <br>
+                      "Read" implique la lecture ou la récupération des données existantes, "Update" consiste à modifier ou mettre à jour ces données, <br>
+                       tandis que "Delete" permet de supprimer les données jugées obsolètes ou inutiles. <br>
+                        Le CRUD est une notion fondamentale en développement logiciel et est largement utilisé dans la conception et la mise en œuvre d'applications web, <br>
+                         de bases de données et de systèmes d'information. Comprendre et maîtriser ces opérations est essentiel pour développer des applications robustes et évolutives.</p>
+            </div>
+            <div class="gallery">
+                <div class="thumbnail" onclick="openCarousel(0)">
+                    <img src="../../assets/img/crud/home.png" alt="Image 1">
+                </div>
+                <div class="thumbnail" onclick="openCarousel(1)">
+                    <img src="../../assets/img/crud/edit.png" alt="Image 2">
+                </div>
+                <div class="thumbnail" onclick="openCarousel(2)">
+                    <img src="../../assets/img/crud/delete.png" alt="Image 3">
+                </div>
+                <div class="thumbnail" onclick="openCarousel(3)">
+                    <img src="../../assets/img/crud/add.png" alt="Image 4">
+                </div>
+                <div class="thumbnail" onclick="openCarousel(3)">
+                    <img src="../../assets/img/crud/sql.png" alt="Image 5">
+                </div>
+                <div class="thumbnail" onclick="openCarousel(3)">
+                    <img src="../../assets/img/crud/apicode.png" alt="Image 6">
+                </div>
+            </div>
+        
+            <div id="carousel" class="carousel">
+                <span class="close" onclick="closeCarousel()">&times;</span>
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                <div class="carousel-content">
+                    <div class="slide">
+                        <img src="../../assets/img/crud/home.png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/crud/edit.png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/crud/delete.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/crud/add.png" alt="Image 4">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/crud/sql.png" alt="Image 5">
+                    </div>
+                    <div class="slide">
+                        <img src="../../assets/img/crud/apicode.png" alt="Image 6">
+                    </div>
+                </div>
+            </div>
+
+            <script src="../script.js"></script>
+        </div>
+        <div class="outlislang">
+            <h1 class="crudtittle">Languages, Outils, Feat</h1>
+            <div class="crud-container">
+                <div class="crud-description">
+                    <img class="icon-outils" src="../assets/img/icon/github-icon-1.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/chatgpt-6.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/react-2.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/vitejs.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/html-1.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/nodejs.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/css-3.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/tailwind-css-2.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/github-copilot-seeklogo.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/visual-studio-code-1.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/mysql-3.svg" alt="">
+                    <img class="icon-outils" src="../assets/img/icon/postman.svg" alt="">
+                    <img class="icon-outils vitrice" src="../assets/img/icon/IMG_20240514_192149_668.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </body>
+    <script src="../../assets/script/nav.js"></script>
+</html>

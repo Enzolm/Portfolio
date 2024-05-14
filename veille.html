@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flux RSS</title>
+</head>
+<body>
+    <h1>Flux RSS</h1>
+    <ul id="rss-feed"></ul>
+
+    <script>
+        const rssFeedUrl = "https://idx.dev/blog/rss.xml";
+
+        function fetchRssFeed() {
+            fetch(rssFeedUrl)
+                .then(response => response.text())
+                .then(xml => {
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(xml, "text/xml");
+                    const items = xmlDoc.querySelectorAll("item");
+
+                    const rssFeedList = document.getElementById("rss-feed");
+
+                    items.forEach(item => {
+                        const title = item.querySelector("title").textContent;
+                        const link = item.querySelector("link").textContent;
+
+                        const listItem = document.createElement("li");
+                        const linkElement = document.createElement("a");
+                        linkElement.textContent = title;
+                        linkElement.setAttribute("href", link);
+
+                        listItem.appendChild(linkElement);
+                        rssFeedList.appendChild(listItem);
+                    });
+                })
+                .catch(error => {
+                    console.error("Une erreur s'est produite lors de la récupération du flux RSS :", error);
+                });
+        }
+        fetchRssFeed();
+    </script>
+</body>
+</html>

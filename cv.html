@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/cv.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV • Enzo Lemaire</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-text">
+            <img src="assets/img/68_generated.jpg" alt="">
+            <h1>Enzo Lemaire</h1>
+        </div>
+        <hr>
+        <div id="navicon">
+            <button class="divhome" onclick="indexPage()">
+                <img src="assets/img/icon/house-door.svg" width="45px" color=#1A1A1A alt="">
+                <h2>Accueil</h2>
+            </button>
+            <button class="divcv" onclick="CVPage()">
+                <img src="assets/img/icon/file-earmark-person.svg" width="45px" alt="">
+                <h2>Mon CV</h2>
+            </button>
+            <button class="divparcours">
+                <img src="assets/img/icon/briefcase.svg" width="45px" alt="">
+                <h2>Mon Parcours</h2>
+            </button>
+            <button class="divprojets" onclick="projetPage()">
+                <img src="assets/img/icon/folder.svg" width="45px" alt="">
+                <h2>Projets</h2>
+        </div>
+        <script>
+            function indexPage() {
+              window.location.href = "/index.html";
+            }
+            function projetPage() {
+              window.location.href = "/projet.html";
+            }
+            function CVPage() {
+              window.location.href = "/cv.html";
+            }
+          </script>
+    </nav>
+    <div class="cvpage">
+        <h1>Mon CV</h1>
+        <div class="pdf-container">
+            <embed src="assets/img/CV_2024-05-14_Enzo_Lemaire.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+    </div>
+</body>
+</html>

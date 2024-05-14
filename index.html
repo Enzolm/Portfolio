@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon2.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio • Enzo Lemaire</title>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo-text">
+            <img src="assets/img/68_generated.jpg" alt="">
+            <h1>Enzo Lemaire</h1>
+        </div>
+        <hr>
+        <div id="navicon">
+            <button class="divhome" onclick="indexPage()">
+                <img src="assets/img/icon/house-door.svg" width="45px" color=#1A1A1A alt="">
+                <h2>Accueil</h2>
+            </button>
+            <button class="divcv" onclick="CVPage()">
+                <img src="assets/img/icon/file-earmark-person.svg" width="45px" alt="">
+                <h2>Mon CV</h2>
+            </button>
+            <button class="divparcours">
+                <img src="assets/img/icon/briefcase.svg" width="45px" alt="">
+                <h2>Mon Parcours</h2>
+            </button>
+            <button class="divprojets" onclick="projetPage()">
+                <img src="assets/img/icon/folder.svg" width="45px" alt="">
+                <h2>Projets</h2>
+        </div>
+        <script>
+            function indexPage() {
+              window.location.href = "/index.html";
+            }
+            function projetPage() {
+              window.location.href = "/projet.html";
+            }
+            function CVPage() {
+              window.location.href = "/cv.html";
+            }
+          </script>
+    </nav>
+    <section class="bitmoji">
+        <img src="assets/img/Design_sans_titre.png" alt="">
+    </section>
+    <section class="home">
+        <section class="quisuije">
+            <h2>Enzo Lemaire</h2>
+            <h4>Etudiant en développement</h4>
+            <h4>Web & Mobile.</h4>
+            <button class="contact">Me Contacter</button>
+        </section>
+    </section>
+</body>
+</html>
